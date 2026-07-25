@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Price Truth — compare stores & real prices</title>
+<meta name="description" content="One click checks the price at every other store, catches fake discounts with real price history, and alerts you when prices drop.">
+<style>
+  :root{
+    --brand:#0E7C66; --brand-2:#059669; --ink:#0f1e1a; --muted:#5b6b66;
+    --bg:#ffffff; --card:#f6f9f8; --line:rgba(0,0,0,.08); --amber:#B45309;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#e8efec; --muted:#9fb0aa; --bg:#0b1113; --card:#121a1c; --line:rgba(255,255,255,.09); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+  a{color:var(--brand)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{display:flex;align-items:center;gap:10px;padding:20px 0}
+  .logo{width:34px;height:34px;background:var(--brand);border-radius:9px;display:grid;place-items:center;flex:0 0 auto}
+  .logo svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  .brand{font-weight:800;letter-spacing:.01em}
+  header nav{margin-left:auto;display:flex;gap:18px;font-size:14px;font-weight:600}
+  header nav a{color:var(--muted);text-decoration:none}
+  .hero{text-align:center;padding:56px 0 40px}
+  .hero h1{font-size:clamp(30px,6vw,50px);line-height:1.08;letter-spacing:-.02em;font-weight:820}
+  .hero h1 .g{color:var(--brand)}
+  .hero p.sub{font-size:clamp(17px,2.4vw,20px);color:var(--muted);max-width:620px;margin:18px auto 0}
+  .cta{display:inline-flex;gap:10px;align-items:center;margin-top:26px;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:11px}
+  .cta:hover{background:#0b6754}
+  .tag{display:inline-block;margin-top:14px;font-size:13px;color:var(--muted)}
+  .pillars{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:26px 0}
+  @media (max-width:680px){.pillars{grid-template-columns:1fr}}
+  .pillar{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .pillar h3{font-size:19px;display:flex;align-items:center;gap:9px}
+  .pillar p{color:var(--muted);margin-top:8px;font-size:15px}
+  .feat{display:grid;grid-template-columns:1fr 1fr;gap:14px 30px;margin:34px 0}
+  @media (max-width:680px){.feat{grid-template-columns:1fr}}
+  .feat div b{display:block;font-size:16px}
+  .feat div span{color:var(--muted);font-size:14.5px}
+  .how{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;margin:30px 0}
+  .how h2{font-size:22px;margin-bottom:6px}
+  .how ol{margin:14px 0 0 20px;color:var(--muted)}
+  .how li{margin:7px 0}
+  .how li b{color:var(--ink)}
+  .trust{text-align:center;margin:40px 0}
+  .trust b{color:var(--brand)}
+  .tr-note{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:26px 0;color:var(--muted);font-size:15px}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:26px 0;color:var(--muted);font-size:14px;display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+  footer a{color:var(--muted);text-decoration:none}
+  footer .sp{margin-left:auto}
+  .section-title{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:8px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="logo"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-5-5m5 5l5-5"/></svg></span>
+    <span class="brand">Price Truth</span>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Compare every store,<br>and know the price is <span class="g">real</span>.</h1>
+    <p class="sub">One click checks the price at every other store. Real price history and a fake-discount detector tell you if the deal is honest. Alerts watch it for you.</p>
+    <a class="cta" href="#">Add to Chrome — free</a>
+    <span class="tag">Also for Edge, Brave &amp; Firefox · no account · nothing tracked until you ask</span>
+  </section>
+
+  <div class="pillars">
+    <div class="pillar">
+      <h3>🛒 Switch stores in one click</h3>
+      <p>On any product, see every other store that sells it and jump straight to that product’s search there. No new tabs, no retyping, no comparison website.</p>
+    </div>
+    <div class="pillar">
+      <h3>📉 Know if the price is honest</h3>
+      <p>Real price history, a detector that catches inflated “was” prices and quiet pre-sale hikes, and alerts the moment the price actually drops.</p>
+    </div>
+  </div>
+
+  <p class="section-title">Everything it does</p>
+  <div class="feat">
+    <div><b>🛒 One-click store compare</b><span>Every store selling this product, one tap away.</span></div>
+    <div><b>📉 Real price history</b><span>What it actually cost — not today’s number.</span></div>
+    <div><b>⚠️ Fake-discount detector</b><span>Catches “50% off” from a price that was never real.</span></div>
+    <div><b>🔔 Price-drop alerts</b><span>Set it and we watch — across stores.</span></div>
+    <div><b>🤝 Better with every user</b><span>Prices pooled anonymously, so one find helps the next.</span></div>
+    <div><b>🌍 15 countries, 130+ stores</b><span>Amazon, Trendyol, Hepsiburada, Walmart &amp; more.</span></div>
+  </div>
+
+  <div class="how" id="how">
+    <h2>How it works</h2>
+    <ol>
+      <li><b>Open a product</b> on any supported store — a small badge appears.</li>
+      <li><b>See the truth</b> — real price history, and whether that “discount” is genuine.</li>
+      <li><b>Compare in one click</b> — jump to the same product’s search at any other store.</li>
+      <li><b>Get pooled prices</b> — anonymous data from everyone using Price Truth means it often already knows where it’s cheaper.</li>
+    </ol>
+  </div>
+
+  <p class="trust">No selling your data. No ad profiles. No account. <b>Ever.</b><br>
+  <span style="color:var(--muted);font-size:14px">Affiliate links are disclosed, and we never overwrite anyone else’s referral.</span></p>
+
+  <div class="tr-note">
+    <b style="color:var(--ink)">Türkçe:</b> Tek tıkla diğer tüm mağazaların fiyatına bakın, sahte indirimleri gerçek fiyat geçmişiyle yakalayın,
+    fiyat düşünce haber alın. Hesap yok, veri satışı yok — siz istemeden hiçbir şey izlenmez. Amazon, Trendyol, Hepsiburada ve 130+ mağaza.
+  </div>
+
+  <footer>
+    <span class="logo" style="width:24px;height:24px;border-radius:6px"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-5-5m5 5l5-5"/></svg></span>
+    <span>Price Truth</span>
+    <a href="privacy.html" class="sp">Privacy policy</a>
+    <a href="#">Add to Chrome</a>
+  </footer>
+</div>
+</body>
+</html>
