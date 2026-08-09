@@ -29,6 +29,9 @@
   .hero p.sub{font-size:clamp(17px,2.4vw,20px);color:var(--muted);max-width:620px;margin:18px auto 0}
   .cta{display:inline-flex;gap:10px;align-items:center;margin-top:26px;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:11px}
   .cta:hover{background:#0b6754}
+  .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .cta-secondary{display:inline-flex;gap:10px;align-items:center;margin-top:26px;background:transparent;color:var(--brand);text-decoration:none;font-weight:700;padding:12px 22px;border-radius:11px;border:2px solid var(--brand)}
+  .cta-secondary:hover{background:var(--card)}
   .tag{display:inline-block;margin-top:14px;font-size:13px;color:var(--muted)}
   .pillars{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:26px 0}
   @media (max-width:680px){.pillars{grid-template-columns:1fr}}
@@ -67,7 +70,10 @@
   <section class="hero">
     <h1>Compare every store,<br>and know the price is <span class="g">real</span>.</h1>
     <p class="sub">One click checks the price at every other store. Real price history and a fake-discount detector tell you if the deal is honest. Alerts watch it for you.</p>
-    <a class="cta" href="https://chromewebstore.google.com/detail/nfckiiibfieoblncbkdnkmameaoeendn" target="_blank" rel="noopener">Add to Chrome — free</a>
+    <div class="cta-row">
+      <a class="cta" href="https://chromewebstore.google.com/detail/nfckiiibfieoblncbkdnkmameaoeendn" target="_blank" rel="noopener">Add to Chrome — free</a>
+      <a class="cta-secondary" href="https://sovrn.co/17nf4vi" rel="sponsored">Shop smart →</a>
+    </div>
     <span class="tag">★★★★★ 5.0 on the Chrome Web Store · no account · nothing tracked until you ask</span>
   </section>
 
